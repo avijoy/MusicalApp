@@ -1,0 +1,35 @@
+<div>{{message}}</div>
+<form [formGroup] = formGroup (ngSubmit) = "addBankDet()">
+    <div class="form-group" >
+      <label for="formGroupExampleInput">Bank Name</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Bank Name" formControlName='bankname'>
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Account Number</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Account Number" formControlName='accountnumber'>
+    </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput2">First Name</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Account Number" formControlName='firstname'>
+    </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput2">Last Name</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Account Number" formControlName='lastname'>
+    </div>
+    <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="primary" id="inlineRadio1" value="option1" formControlName='primary'>
+    <label class="form-check-label" for="inlineRadio1">Primary</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="primary" id="inlineRadio2" value="option2" formControlName='primary'>
+    <label class="form-check-label" for="inlineRadio2">Secondary</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+    <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+  </div><br><br>
+  <div class="form-group">
+    <input type="submit" class="btnSubmit" value="Submit" />
+  </div>
+</form>
+

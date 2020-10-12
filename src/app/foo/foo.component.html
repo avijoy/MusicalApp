@@ -1,0 +1,14 @@
+<app-header></app-header>
+<div class="col-md-6 login-form-2 col-md-offset-6 col-md-12">
+    <h3>Send Message </h3>
+    <form #test = "ngForm" (ngSubmit) = "onSubmit(test)">
+        String:<br>
+        <input type="text" [(ngModel)]="fooString" name="message"><br>
+        file:<br>
+        <input type="file"  name="File" (change)="imageChoice($event)"><br>
+        <br><br>
+        <input type="submit" value="Submit">
+        <br><br>
+        <h4 *ngIf = "this.flagForstr">This is the response from string "{{this.message}}"</h4>
+    </form>
+</div>

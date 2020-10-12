@@ -1,0 +1,14 @@
+<h1> Bank Names </h1>
+<br>
+<ul class="list-group" >
+  <div href="#" class="list-group-item" style="cursor:pointer" *ngFor= "let bankdet of bankdets; index as i" (click)="showDet(bankdet.accountnumber)">
+      <a >{{bankdet.bankname}} <br><br> 
+      </a>   
+  </div>
+
+  <h1>Bank Details</h1><br>
+   <div href="#" class="list-group-item" style="cursor:pointer" >
+    <a >{{value}} <br><br> 
+    </a>   
+</div>   
+</ul>

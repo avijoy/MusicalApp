@@ -1,0 +1,17 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <!--<div><a href="https://www.in28minutes.com" class="navbar-brand"></a>-->
+            <div><a routerLink='/testPage' class="navbar-brand">
+            MusicalApp</a></div>
+    
+        <ul class="navbar-nav">
+            <li><a *ngIf="isUserLoggedin()" routerLink="/plaid" class="nav-link">Plaid</a></li>
+            <li><a *ngIf="isUserLoggedin()" routerLink="/musicApp" class="nav-link">MusicStore</a></li>
+        </ul>
+    
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+                <li><a *ngIf="!isUserLoggedin()" routerLink="/login" class="nav-link">Login</a></li>
+                <li><a *ngIf="isUserLoggedin()" (click)="logout()" class="nav-link">Logout</a></li>
+        </ul>
+    </nav>
+    </header>
